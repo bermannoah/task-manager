@@ -2,6 +2,7 @@ require_relative '../models/task.rb'
 
 class TaskManagerApp < Sinatra::Base
   set :root, File.expand_path("..", __dir__)
+  set :public_folder, 'public'
   
   get '/' do
     erb :dashboard

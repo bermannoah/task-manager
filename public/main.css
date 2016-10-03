@@ -1,0 +1,26 @@
+* {
+  border-radius: 0;
+}
+
+body {
+  background-image: url('bg_image.jpeg');
+  background-size: 100% auto;
+}
+
+.text-center {
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+.container-fluid {
+  background: rgba(255, 255, 255, 0.0);
+}
+
+.body-content {
+  margin-top: 6em;
+}
+
+.welcome-sign {
+  color: #fff;
+  font-weight: bolder;
+  margin: 30px;
+}
