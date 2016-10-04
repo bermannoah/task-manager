@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Task Manager</title>
-    <link href="main.css" rel="stylesheet">
-    <link href="bootstrap.css" rel="stylesheet">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Task Manager</title>
+        <link href="main.css" rel="stylesheet">
+        <link href="bootstrap.css" rel="stylesheet">
 
-  </head>
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/">Task Manager</a>
-      </div>
-        <ul class="nav navbar-nav">
-          <li><a href="/tasks/new">New Task</a></li>
-          <li><a href="/tasks">Task List</a></li>
-        </ul>
-      </div>
-    </nav>
-      
-    <div class="body-content">  
-      <div class="text-center welcome-sign">
-        <h1>All Tasks, All The Time</h1>
-      </div>
-    </div>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Task Manager</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/tasks/new">New Task</a>
+                    </li>
+                    <li>
+                        <a href="/tasks">Task List</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-<% @tasks.each do |task| %>
-  <h3 class="text-center"><a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
-    <p class="text-center"><%= task.description %></p>
-<% end %>
+        <div class="body-content">
+            <div class="text-center welcome-sign">
+                <h1>All Tasks, All The Time</h1>
+            </div>
+        </div>
 
-</body>
+        <div class="container index-background">
+            <% @tasks.each do |task| %>
+            <h3 class="text-center">
+                <a href="/tasks/<%= task.id %>" class="index-titles"><%= task.title %></a>
+            </h3>
+            <p class="text-center index-content"><%= task.description %></p>
+            <% end %>
+        </div>
+
+    </body>
 </html>

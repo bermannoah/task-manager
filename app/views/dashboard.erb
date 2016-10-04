@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Task Manager</title>
-    <link href="main.css" rel="stylesheet">
-    <link href="bootstrap.css" rel="stylesheet">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Task Manager</title>
+        <link href="main.css" rel="stylesheet">
+        <link href="bootstrap.css" rel="stylesheet">
 
-  </head>
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Task Manager</a>
-      </div>
-        <ul class="nav navbar-nav">
-          <li><a href="/tasks/new">New Task</a></li>
-          <li><a href="/tasks">Task List</a></li>
-        </ul>
-      </div>
-    </nav>
-      
-    <div class="body-content">  
-      <div class="text-center welcome-sign">
-        <h1>Welcome to Task Manager!</h1>
-      </div>
-    
-      <div class="text-center">
-          <a class="btn btn-primary btn-lg" role="button" href="/tasks/new">Make a new   task</a>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Task Manager</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/tasks/new">New Task</a>
+                    </li>
+                    <li>
+                        <a href="/tasks">Task List</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="body-content">
+            <div class="text-center welcome-sign">
+                <h1>Welcome to Task Manager!</h1>
+            </div>
+
+            <div class="text-center">
+                <a class="btn btn-primary btn-lg" role="button" href="/tasks/new">Make a new task</a>
+            </div>
+            <br/>
+            <div class="text-center">
+                <a class="btn btn-primary btn-lg" role="button" href="/tasks">List of all Tasks</a>
+            </div>
         </div>
-        <br />
-        <div class="text-center">
-          <a class="btn btn-primary btn-lg" role="button" href="/tasks">List of all  Tasks</a>
-        </div>
-      </div>
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
 </html
