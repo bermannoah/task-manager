@@ -38,7 +38,11 @@
                 <a href="/tasks/<%= task.id %>" class="index-titles"><%= task.title %></a>
             </h3>
             <p class="text-center index-content"><%= task.description %></p>
-            <a href="/tasks/<%= task.id %>/edit">Edit</a>
+            <a class="btn btn-success" href="/tasks/<%= task.id %>/edit">Edit</a>
+            <form action="/tasks/<%= task.id %>" method="POST">
+              <input type="hidden" name="_method" value="DELETE">
+              <button class="btn btn-danger" type="submit" value="delete">Delete</button>
+            </form>
             <% end %>
         </div>
 
