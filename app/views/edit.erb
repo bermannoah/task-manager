@@ -25,14 +25,27 @@
     <div class="welcome-sign body-content">
     <a href="/tasks">Task Index</a>
   </div>
-
-  <form action-"/tasks/<%= @task.id %>" method="post">
-    <p>Edit</p>
+  
+<div class="container text-center">
+  <form action="/tasks/<%= @task.id %>" method="post">
+    <h1 class="welcome-sign text-center">Edit Your Task</h1>
+    <div class="form-group">
     <input type="hidden" name="_method" value="PUT" />
-    <input type='text' name='task[title]' value="<%= @task.title %>" /><br/>
-    <textarea name='task[description]'><%= @task.description %></textarea><br/>
-    <input type='submit'/>
+    <input type='text' name='task[title]' value="<%= @task.title %>" class="form-control text-center" /><br/>
+    </div>
+    <div class="form-group">
+    <textarea name='task[description]' class="form-control text-center" rows="7"><%= @task.description %></textarea><br/>
+    <input type='submit'class="btn btn-success" />
+  </div>
+  </div>
   </form>
+</div>
+  
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+
 
 </body>
 </html>

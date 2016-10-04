@@ -22,13 +22,14 @@
         </div>
       </nav>
         
-  <div class="container text-center body-content form-adjust">
+  <div class="container text-center form-adjust">
     <form action="/tasks" method="post">
+        <h1 class="welcome-sign text-center">Create Your Task</h1>
       <div class="form-group">
         <input type='text' class="form-control" name='task[title]' placeholder="Enter a title"/>
       </div>
       <div class="form-group">
-        <textarea name='task[description]' class="form-control" placeholder="Enter a description"></textarea><br />
+        <textarea name='task[description]' class="form-control" placeholder="Enter a description" rows="7"></textarea><br />
         <button type="submit" class="btn btn-default">Submit</button>
       </div>
     </form>

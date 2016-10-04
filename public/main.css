@@ -10,8 +10,19 @@ body {
     background-size: cover;
 }
 
+.task-box {
+  clear: both;
+}
+
 .text-center {
     background-color: rgba(0, 0, 0, 0.0);
+    margin: 5px;    
+}
+
+.button-per-task {
+  margin: 15px;
+  margin-top: 1em;
+  float: left;
 }
 
 .container-fluid {
@@ -23,36 +34,43 @@ body {
 }
 
 .welcome-sign {
-    color: #000;
+    color: #fff;
     font-weight: bolder;
-    margin: 30px;
+    margin: 20px;
 }
 
 .index-titles {
     color: #000;
+    text-align: center;
 }
 
 .index-titles:hover {
-    color: #fff;
+    color: #88da02;
     text-decoration: none;
 }
 
 .index-content {
-    color: #000;
+  background-color: rgba(255, 255, 255, 1);
+  color: #000;
+  border: 1px solid black;
+  padding-bottom: 1.5em;
 }
 
 .index-background {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .show-titles {
-    color: #000;
+    color: #fff;
     font-size: 3em;
 }
 
 .show-content {
-    background-color: rgba(255, 255, 255, 0.5);
-    font-size: 2em;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 1.5em;
+    padding: 10px;
+    border: 1px solid black;
 }
 
 .form-adjust {
